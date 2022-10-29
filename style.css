@@ -13,6 +13,10 @@ body {
   background-color: #e5e5e5;
 }
 
+.language {
+  list-style: none;
+}
+
 .language a {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -264,7 +268,7 @@ header {
 .title {
   display: flex;
   justify-content: space-between;
-  padding: 24px;
+  padding: 24px 0;
   border-bottom: 1px solid #dfe1e6;
 }
 
