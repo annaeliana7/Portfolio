@@ -16,6 +16,7 @@ body {
 
 .language {
   list-style: none;
+  padding: 0 17px;
 }
 
 .language a {
@@ -243,6 +244,12 @@ header {
   color: #344563;
 }
 
+.work-description {
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+}
+
 /* About section  */
 #about-section {
   background-color: #fff;
@@ -463,15 +470,38 @@ padding: 15px 142px;
   margin: 0;
 }
 
-.work-description {
-  flex-direction: column;
-  display: flex;
-  gap: 20px;
-}
-
 .img {
   width: 100%;
   cursor:pointer;
+}
+
+ /*===============================*\
+           About me
+*\===============================*/
+
+#about-section {
+  padding: 114px 142px;
+  display: flex;
+  gap: 30px;
+}
+
+.about {
+ width: 50%;
+ padding: 0;
+}
+
+.language {
+  flex-direction: row;
+  width: 50%;
+}
+
+.classification-2 {
+  flex-direction: row;
+}
+
+.classification-2 li {
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 }
