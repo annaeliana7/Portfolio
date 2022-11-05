@@ -504,4 +504,12 @@ padding: 15px 142px;
   align-items: flex-start;
 }
 
+ /*===============================*\
+           Contact me
+*\===============================*/
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
 }
+  }
