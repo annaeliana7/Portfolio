@@ -437,6 +437,20 @@ header {
     padding: 15px 142px;
   }
 
+  #headline .intro-portfolio {
+    animation: slideLeftRight 2s;
+  }
+  
+  @keyframes slideLeftRight {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+
   /* ===============================*\
            headline
 *\=============================== */
@@ -471,6 +485,10 @@ header {
     width: 100%;
     cursor: pointer;
   }
+  
+  /* .img:hover {
+    transform: scale(1.05);
+  } */
 
   .order {
     order: 2;
