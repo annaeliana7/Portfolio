@@ -472,6 +472,7 @@ header {
   /* ===============================*\
            Work
 *\=============================== */
+
   .portfolio-snapshot {
     flex-direction: row;
   }
@@ -485,10 +486,6 @@ header {
     width: 100%;
     cursor: pointer;
   }
-  
-  /* .img:hover {
-    transform: scale(1.05);
-  } */
 
   .order {
     order: 2;
