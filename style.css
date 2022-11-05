@@ -476,6 +476,10 @@ header {
     order: 2;
   }
 
+  .work-description {
+    margin-top: 20px;
+  }
+
   /* ===============================*\
            About me
 *\=============================== */
@@ -487,13 +491,13 @@ header {
   }
 
   .about {
-    width: 50%;
+    width: 40%;
     padding: 0;
   }
 
   .language {
     flex-direction: row;
-    width: 50%;
+    width: 60%;
   }
 
   .classification-2 {
@@ -510,7 +514,12 @@ header {
 *\=============================== */
 
   .wrapper {
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
+  }
+
+  .sub-butn-center {
+    text-align: center;
+    width: 100%
   }
 }
