@@ -451,6 +451,13 @@ header {
     }
   }
 
+  header .navbar h2:hover {
+    border: 1px solid rgba(157, 241, 208, 0.5);
+    background-color: rgba(157, 241, 208, 0.5);
+    padding: 17px;
+    border-radius: 5px;
+  }
+
   /* ===============================*\
            headline
 *\=============================== */
