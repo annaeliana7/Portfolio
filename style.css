@@ -494,6 +494,10 @@ header {
     cursor: pointer;
   }
 
+  .img:hover {
+    transform: scale(1.05);
+  }
+
   .order {
     order: 2;
   }
