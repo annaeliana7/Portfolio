@@ -394,6 +394,10 @@ header {
 
 @media all and (min-width: 768px) {
 
+/*===============================*\
+           Header
+*\===============================*/
+
 .nav-desktop {
   display: block;
   
@@ -429,30 +433,45 @@ header .navbar .menu-desktop a:hover {
 padding: 15px 142px;
 }
 
-  /* #header {
-    padding: 0 143px;
-  }
+ /*===============================*\
+           headline
+*\===============================*/
 
-  .display {
-    background-image: url(images/Header-Desktop.svg);
-    justify-content: center;
-    padding: 260px;
-  }
-
-  .display h1 {
-    font-size: 48px;
-    Line-height: 60px;
-  }
-
-  .display p {
-    font-size: 20px;
-    line-height: 28px;
-  } */
-
-  /*===============================*\
-            Header
-  *\===============================*/
-  
+#headline {
+  background-image: url("images/Header-Desktop.svg");
+  justify-content: center;
+  padding: 0px 110px;
 }
 
+#headline h1 {
+  font-size: 48px;
+}
 
+#headline p {
+  font-size: 20px;
+}
+
+ /*===============================*\
+           Work
+*\===============================*/
+.portfolio-snapshot {
+  flex-direction: row;
+}
+
+#work {
+  padding: 142px;
+  margin: 0;
+}
+
+.work-description {
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+}
+
+.img {
+  width: 100%;
+  cursor:pointer;
+}
+
+}
