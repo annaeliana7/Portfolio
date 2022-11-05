@@ -440,12 +440,12 @@ header {
   #headline .intro-portfolio {
     animation: slideLeftRight 2s;
   }
-  
+
   @keyframes slideLeftRight {
     0% {
       transform: translateX(-100%);
     }
-  
+
     100% {
       transform: translateX(0);
     }
