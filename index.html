@@ -10,21 +10,31 @@
 </head>
 
 <body>
+    <!--Header-->
     <header id="header">
         <nav class="navbar">
             <a href="">
-                <h2>My Logo</h2>
-            </a>
-            <img src="images/Hamburger_button.svg" alt="menu button">
+                <h2>My Logo</h2></a>
+            
+        <div class="nav-desktop">
+            <ul class="menu-desktop">
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+            <img class="hamb-bu" src="images/Hamburger_button.svg" alt="menu button">
         </nav>
     </header>
+
+     <!-- contact section -->
 
     <section id="headline">
         <h1>I’m Mariane Glad to see you!</h1>
         <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work
             and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
         </p>
-        <a href="#">LET’S CONNECT</a>
+        <a class="connect" href="#">LET’S CONNECT</a>
         <ul class="social-links">
             <li><a href="#"><img src="images/Twitter.svg" alt="Twitter"></a></li>
             <li><a href="#"><img src="images/Linkedin.svg" alt="LinkedIn"></a></li>
@@ -38,8 +48,9 @@
 
         <!--Portfolio Card -1-->
         <div class="portfolio-snapshot">
-            <a class=img href="#"><img src="images/portfolio-snapshot-1.svg" alt="Portfolio-Snapshot-1"></a>
+            <img class="img" src="images/portfolio-snapshot-1.svg" alt="Portfolio-Snapshot-1">
 
+            <div class="work-description">
             <h1 class="project-title">Tonic</h1>
             <ul class="project-name">
                 <li class="sub-title"><a href="#">CANOPY</a></li>
@@ -60,13 +71,15 @@
             <div>
                 <button class="btn" type="button" class="default_btn">See Project</button>
             </div>
+        </div>
         </div>
 
 
         <!--Portfolio Card -2-->
         <div class="portfolio-snapshot">
-            <a class=img href="#"><img src="images/portfolio- snapshot-2.svg" alt="Portfolio-Snapshot-2"></a>
+            <img class="img order" src="images/portfolio- snapshot-2.svg" alt="Portfolio-Snapshot-2">
 
+            <div class="work-description">
             <h1 class="project-title">Multi-Post Stories</h1>
             <ul class="project-name">
                 <li class="sub-title"><a href="#">CANOPY</a></li>
@@ -88,11 +101,13 @@
                 <button class="btn" type="button" class="default_btn">See Project</button>
             </div>
         </div>
+        </div>
 
         <!--Portfolio Card -3-->
         <div class="portfolio-snapshot">
-            <a class=img href="#"><img src="images/portfolio- snapshoot-3.svg" alt="Portfolio-Snapshot-3"></a>
+            <img class="img" src="images/portfolio- snapshoot-3.svg" alt="Portfolio-Snapshot-3">
 
+            <div class="work-description">
             <h1 class="project-title">Tonic</h1>
             <ul class="project-name">
                 <li class="sub-title"><a href="#">CANOPY</a></li>
@@ -114,11 +129,13 @@
                 <button class="btn" type="button" class="default_btn">See Project</button>
             </div>
         </div>
+        </div>
 
         <!--Portfolio Card -4-->
         <div class="portfolio-snapshot">
-            <a class=img href="#"><img src="images/portfolio-snapshoot-4.svg" alt="Portfolio-Snapshot-4"></a>
+            <img class="img order" src="images/portfolio-snapshoot-4.svg" alt="Portfolio-Snapshot-4">
 
+            <div class="work-description">
             <h1 class="project-title">Multi-Post Stories</h1>
             <ul class="project-name">
                 <li class="sub-title"><a href="#">CANOPY</a></li>
@@ -139,13 +156,14 @@
             <div>
                 <button class="btn" type="button" class="default_btn">See Project</button>
             </div>
+        </div>
         </div>
     </section>
 
 
     <!-- About section -->
     <section id="about-section">
-        <div class="about">
+        <div class="about" class="display">
             <h1>About Myself</h1>
             <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of
                 my work and experience! If you like what you see and have a project you need coded, don’t hestiate to
@@ -160,6 +178,7 @@
             </ul>
             <div>
                 <button class="btn" type="button" class="default_btn">Get my resume</button>
+            </div>
             </div>
 
             <ul class="language">
@@ -184,12 +203,13 @@
                     <img src="images/Side arrow.svg" alt="side-arrow">
                 </li>
         </div>
-        </div>
+    
     </section>
 
     <!-- contact section -->
     <section class="contact">
         <div class="container">
+            <div class="wrapper">
             <h2 class="title">Contact me</h2>
             <p class="contact-descrip">If you have an application you are interested in developing, a feature
                 that you need built or a project that needs coding. I’d love to help
@@ -200,9 +220,13 @@
                     <input class="input-form" name="email" type="email" placeholder="example@me.com" required />
                     <textarea class="text-form" name="message" placeholder="Write your message here" maxlength="500"
                         required></textarea>
-                    <button type="submit" class="submit-button">Get It Touch</button>
+                        <div class="sub-butn-center">
+                        <button type="submit" class="submit-button">Get It Touch</button>    
+                        </div>
+                    
                 </fieldset>
             </form>
+        </div>
         </div>
     </section>
 

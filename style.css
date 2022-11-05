@@ -16,6 +16,7 @@ body {
 
 .language {
   list-style: none;
+  padding: 0 17px;
 }
 
 .language a {
@@ -125,12 +126,15 @@ header {
   font-size: 16px;
   color: #7f8cff;
   text-decoration: none;
-  padding: 0 24px;
 }
 
 .classification {
   display: flex;
   gap: 10px;
+}
+
+.connect {
+  padding: 0 24px;
 }
 
 .social-links {
@@ -238,6 +242,12 @@ header {
   font-weight: 400;
   font-size: 15px;
   color: #344563;
+}
+
+.work-description {
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
 }
 
 /* About section  */
@@ -382,4 +392,136 @@ header {
 .submit-button:hover {
   background: #6070ff;
   color: #fff;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+@media all and (min-width: 768px) {
+  /* ===============================*\
+           Header
+*\=============================== */
+
+  .nav-desktop {
+    display: block;
+  }
+
+  .menu-desktop {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  header .navbar .menu-desktop a {
+    font-size: 15px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 500;
+    color: #344563;
+  }
+
+  header .navbar .menu-desktop a:hover {
+    color: #6070ff;
+  }
+
+  .hamb-bu {
+    display: none;
+  }
+
+  .navbar {
+    padding: 15px 142px;
+  }
+
+  /* ===============================*\
+           headline
+*\=============================== */
+
+  #headline {
+    background-image: url("images/Header-Desktop.svg");
+    justify-content: center;
+    padding: 0 110px;
+  }
+
+  #headline h1 {
+    font-size: 48px;
+  }
+
+  #headline p {
+    font-size: 20px;
+  }
+
+  /* ===============================*\
+           Work
+*\=============================== */
+  .portfolio-snapshot {
+    flex-direction: row;
+  }
+
+  #work {
+    padding: 142px;
+    margin: 0;
+  }
+
+  .img {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .order {
+    order: 2;
+  }
+
+  .work-description {
+    margin-top: 20px;
+  }
+
+  /* ===============================*\
+           About me
+*\=============================== */
+
+  #about-section {
+    padding: 114px 142px;
+    display: flex;
+    gap: 30px;
+  }
+
+  .about {
+    width: 40%;
+    padding: 0;
+  }
+
+  .language {
+    flex-direction: row;
+    width: 60%;
+  }
+
+  .classification-2 {
+    flex-direction: row;
+  }
+
+  .classification-2 li {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 122px;
+    height: 120px;
+  }
+
+  /* ===============================*\
+           Contact me
+*\=============================== */
+
+  .wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .sub-butn-center {
+    text-align: center;
+    width: 100%;
+  }
 }
