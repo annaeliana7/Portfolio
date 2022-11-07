@@ -19,6 +19,9 @@ Clone this repository by using the command line :
 
 - GitHub: [@annaeliana](https://github.com/annaeliana7)
 
+## Live Demo
+- [Live Demo](https://annaeliana7.github.io/Portfolio/)
+
 ## :handshake: Contributing
 Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](../../issues/).
