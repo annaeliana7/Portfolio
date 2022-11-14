@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -23,8 +24,9 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
-            <img class="hamb-bu" src="images/Hamburger_button.svg" alt="menu button">
+            <img class="hamb-bu" id="hamb-bu" onclick="myFunction()" href="#" src="images/Hamburger_button.svg" alt="menu button">
         </nav>
+        
     </header>
 
      <!-- contact section -->
@@ -43,6 +45,17 @@
             <li><a href="#"><img src="images/Angel List.svg" alt="Angel List"></a></li>
         </ul>
     </section>
+
+    <!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+    <img src="images/cross-Icon.svg" class="cross-button" id="cross-button" alt="cross">
+    <ul>
+        <li><a class="navigation" href="#work">Portfolio</a></li>
+        <li><a class="navigation" href="#about-section">About</a></li>
+        <li><a class="navigation" href="#contact-me">Contact</a></li>
+    </ul>
+</div>
+
     <!--Work section-->
     <section id="work">
 
@@ -207,7 +220,7 @@
     </section>
 
     <!-- contact section -->
-    <section class="contact">
+    <section class="contact" id="contact-me">
         <div class="container">
             <div class="wrapper">
             <h2 class="title">Contact me</h2>

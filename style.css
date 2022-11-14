@@ -525,3 +525,28 @@ header {
     width: 100%;
   }
 }
+
+  /* ===============================*\
+           Mobile Menu
+*\=============================== */
+
+.mobile-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(96, 112, 255, 0.8);
+  backdrop-filter: blur(10px);
+  display: none;
+}
+
+.mobile-menu img {
+  position: absolute;
+  top: 56px;
+  right: 32px;
+}
+
+.pointer {
+  cursor: pointer;
+}
