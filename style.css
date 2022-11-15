@@ -63,6 +63,10 @@ header .navbar {
   align-items: center;
 }
 
+.pop-up-btns a {
+  text-decoration: none;
+}
+
 header .navbar a {
   text-decoration: none;
   color: #6070ff;
@@ -120,6 +124,14 @@ header {
   padding: 0 24px;
 }
 
+.mobile-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
 #headline a {
   font-style: normal;
   font-weight: 500;
@@ -169,6 +181,11 @@ header {
 .btn:disabled {
   color: #5e6c84;
   border: 1px solid #c1c7d0;
+}
+
+.hamb-bu,
+.cross-button {
+  cursor: pointer;
 }
 
 .project-name {
@@ -250,7 +267,8 @@ header {
   gap: 20px;
 }
 
-/* About section  */
+/* --About section-- */
+
 #about-section {
   background-color: #fff;
   border-top-right-radius: 100px;
@@ -524,4 +542,41 @@ header {
     text-align: center;
     width: 100%;
   }
+}
+
+/* ===============================*\
+           Mobile Menu
+*\=============================== */
+
+.mobile-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(96, 112, 255, 0.8);
+  backdrop-filter: blur(10px);
+  display: none;
+  transition: 0.5s;
+}
+
+.mobile-menu.display {
+  display: flex;
+}
+
+.mobile-menu img {
+  position: absolute;
+  top: 56px;
+  right: 32px;
+}
+
+.mobile-menu ul {
+  position: absolute;
+  top: 90px;
+  left: 12px;
+  padding: 16px;
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  gap: 40px;
 }
