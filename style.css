@@ -171,6 +171,10 @@ header {
   border: 1px solid #c1c7d0;
 }
 
+.hamb-bu, .cross-button {
+  cursor: pointer;
+}
+
 .project-name {
   display: flex;
   list-style: none;
@@ -541,12 +545,13 @@ header {
   display: none;
 }
 
+.mobile-menu.display {
+  display: flex;
+}
+
 .mobile-menu img {
   position: absolute;
   top: 56px;
   right: 32px;
 }
 
-.pointer {
-  cursor: pointer;
-}
