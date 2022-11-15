@@ -63,6 +63,10 @@ header .navbar {
   align-items: center;
 }
 
+.pop-up-btns a {
+  text-decoration: none;
+}
+
 header .navbar a {
   text-decoration: none;
   color: #6070ff;
@@ -120,6 +124,14 @@ header {
   padding: 0 24px;
 }
 
+.mobile-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
 #headline a {
   font-style: normal;
   font-weight: 500;
@@ -171,7 +183,8 @@ header {
   border: 1px solid #c1c7d0;
 }
 
-.hamb-bu, .cross-button {
+.hamb-bu,
+.cross-button {
   cursor: pointer;
 }
 
@@ -254,7 +267,10 @@ header {
   gap: 20px;
 }
 
-/* About section  */
+/* ===============================*\
+          About section
+*\=============================== */
+
 #about-section {
   background-color: #fff;
   border-top-right-radius: 100px;
@@ -530,7 +546,7 @@ header {
   }
 }
 
-  /* ===============================*\
+/* ===============================*\
            Mobile Menu
 *\=============================== */
 
@@ -555,10 +571,6 @@ header {
   right: 32px;
 }
 
-/* ===============================*\
-           Popup Mobile Menu
-*\=============================== */
-
 .mobile-menu ul {
   position: absolute;
   top: 90px;
@@ -569,16 +581,3 @@ header {
   flex-direction: column;
   gap: 40px;
 }
-
-.pop-up-btns a {
-  text-decoration: none;
-}
-
-.mobile-menu ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-}
-
