@@ -557,6 +557,7 @@ header {
   background-color: rgba(96, 112, 255, 0.8);
   backdrop-filter: blur(10px);
   display: none;
+  transition: 0.5s;
 }
 
 .mobile-menu.display {
