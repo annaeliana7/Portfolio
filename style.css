@@ -555,3 +555,30 @@ header {
   right: 32px;
 }
 
+/* ===============================*\
+           Popup Mobile Menu
+*\=============================== */
+
+.mobile-menu ul {
+  position: absolute;
+  top: 90px;
+  left: 12px;
+  padding: 16px;
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.pop-up-btns a {
+  text-decoration: none;
+}
+
+.mobile-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
