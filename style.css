@@ -265,6 +265,7 @@ header {
   flex-direction: column;
   display: flex;
   gap: 20px;
+  order: 1;
 }
 
 /* --About section-- */
@@ -480,6 +481,10 @@ header {
     flex-direction: row;
   }
 
+  .portfolio-snapshot img {
+    width: 50%;
+    order: 0;
+  }
   #work {
     padding: 142px;
     margin: 0;
@@ -495,7 +500,9 @@ header {
   }
 
   .work-description {
+    width: 50%;
     margin-top: 20px;
+    order: 0;
   }
 
   /* ===============================*\
