@@ -25,6 +25,7 @@ window.onload = function () {
 
 function showDetail(project) {
   console.log("Project:", project)
+  
 }
 
 /* Update list of project dynamicaly */
