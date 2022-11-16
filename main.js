@@ -285,3 +285,18 @@ listProject.forEach((project) => {
   work.append(portfolioSnapshot);
   index += 1;
 });
+
+/* Form Validation */
+var form = document.getElementById("form")
+var error = document.getElementById('error')
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  var email = form.elements.email;
+  if(email.validity.typeMismatch 
+    || email.value.toLowerCase() != email.value
+    || !email.validity.valid) {
+    error.textContent = "Invalid email. Please ensure you have the correct email address; also, check that the content of the email field is in lowercase. Thank you."
+  }else {
+    form.submit()
+  }
+})
