@@ -100,6 +100,11 @@ header {
   color: #172b4d;
 }
 
+.popup-wrapper .portfolio-snapshot h1 {
+  width: 80%;
+  order: 0;
+}
+
 #headline h1 {
   font-style: normal;
   font-weight: 700;
@@ -465,11 +470,6 @@ header {
     padding: 0 110px;
   }
 
-  .popup-wrapper .portfolio-snapshot h1 {
-    width: 80%;
-    order: 0;
-  }
-
   #headline h1 {
     font-size: 48px;
   }
@@ -659,9 +659,13 @@ header {
   margin-right: 15px;
 }
 
+.popup-wrapper .portfolio-snapshot .detail-footer .btn p {
+  font-size: 15px;
+}
+
 .popup-wrapper .portfolio-snapshot .detail-footer .btn img {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   margin-top: 3px;
   margin-left: 15px;
 }
