@@ -100,6 +100,11 @@ header {
   color: #172b4d;
 }
 
+.popup-wrapper .portfolio-snapshot h1 {
+  width: 80%;
+  order: 0;
+}
+
 #headline h1 {
   font-style: normal;
   font-weight: 700;
@@ -114,6 +119,10 @@ header {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+}
+
+.popup-wrapper .portfolio-snapshot .detail-footer .btn p {
+  font-size: 15px;
 }
 
 #headline p {
@@ -217,7 +226,6 @@ header {
   font-family: Poppins, sans-serif;
   font-size: 32px;
   color: #172b4d;
-  line-height: 0.8px;
   padding-top: 12px;
 }
 
@@ -239,7 +247,7 @@ header {
 .portfolio-snapshot {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   background-color: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -265,6 +273,7 @@ header {
   flex-direction: column;
   display: flex;
   gap: 20px;
+  order: 1;
 }
 
 /* --About section-- */
@@ -480,6 +489,11 @@ header {
     flex-direction: row;
   }
 
+  .portfolio-snapshot img {
+    width: 50%;
+    order: 0;
+  }
+
   #work {
     padding: 142px;
     margin: 0;
@@ -495,7 +509,9 @@ header {
   }
 
   .work-description {
+    width: 50%;
     margin-top: 20px;
+    order: 0;
   }
 
   /* ===============================*\
@@ -579,4 +595,149 @@ header {
   list-style-type: none;
   flex-direction: column;
   gap: 40px;
+}
+
+/* ===============================*\
+          Mobile Popup Details
+*\=============================== */
+
+.popup-wrapper {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgba(193, 199, 208, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 60px 17px 50px 17px;
+}
+
+.popup-wrapper .portfolio-snapshot {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.popup-wrapper .portfolio-snapshot .detail-footer .classification {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.popup-wrapper .portfolio-snapshot .btn-wrapper {
+  order: 0;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.popup-wrapper .portfolio-snapshot .img-wrapper {
+  width: 100%;
+}
+
+.popup-wrapper .portfolio-snapshot .img-wrapper img {
+  width: 100%;
+}
+
+.popup-wrapper .portfolio-snapshot .description {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.popup-wrapper .portfolio-snapshot .detail-footer {
+  width: 100%;
+  padding: 20px 0 20px 0;
+}
+
+.popup-wrapper .portfolio-snapshot .detail-footer .btn {
+  margin-top: 20px;
+  width: 45%;
+  height: 48px;
+  display: inline-flex;
+  margin-right: 15px;
+}
+
+.popup-wrapper .portfolio-snapshot .detail-footer .btn img {
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+  margin-left: 15px;
+}
+
+@media all and (min-width: 768px) {
+  /* ===============================*\
+          Desktop Popup Details
+*\=============================== */
+
+  .popup-wrapper {
+    height: 100vh;
+    overflow-y: scroll;
+  }
+
+  .popup-wrapper .portfolio-snapshot {
+    width: 100%;
+    max-width: 1156px;
+    top: 20px;
+    position: absolute;
+    display: flex;
+    padding: 24px;
+  }
+
+  .popup-wrapper .portfolio-snapshot .btn-wrapper img {
+    height: 24px;
+    width: 24px;
+  }
+
+  .popup-wrapper .portfolio-snapshot .project-name {
+    width: 100%;
+    order: 1;
+  }
+
+  .popup-wrapper .portfolio-snapshot .img-wrapper {
+    width: 100%;
+    height: 586px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    order: 2;
+    padding-top: 30px;
+  }
+
+  .popup-wrapper .portfolio-snapshot .btn-wrapper {
+    width: 20%;
+  }
+
+  .popup-wrapper .portfolio-snapshot .description {
+    order: 3;
+    width: 70%;
+    padding: 60px 30px 80px 0;
+  }
+
+  .popup-wrapper .portfolio-snapshot .detail-footer {
+    order: 3;
+    width: 30%;
+    padding: 60px 8px 80px 8px;
+  }
+
+  .popup-wrapper .portfolio-snapshot .detail-footer .classification {
+    width: 100%;
+    height: 50px;
+  }
+
+  .popup-wrapper .portfolio-snapshot .detail-footer .btn p {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+  }
+
+  .popup-wrapper .portfolio-snapshot .detail-footer .btn img {
+    margin-left: 0;
+  }
 }
