@@ -121,6 +121,10 @@ header {
   color: #344563;
 }
 
+.popup-wrapper .portfolio-snapshot .detail-footer .btn p {
+  font-size: 15px;
+}
+
 #headline p {
   font-style: normal;
   font-weight: 400;
@@ -657,10 +661,6 @@ header {
   height: 48px;
   display: inline-flex;
   margin-right: 15px;
-}
-
-.popup-wrapper .portfolio-snapshot .detail-footer .btn p {
-  font-size: 15px;
 }
 
 .popup-wrapper .portfolio-snapshot .detail-footer .btn img {
