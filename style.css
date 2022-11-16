@@ -741,3 +741,11 @@ header {
     margin-left: 0;
   }
 }
+
+/* ===============================*\
+          Contact Validation
+*\=============================== */
+
+.error {
+  font-weight: bold;
+}
