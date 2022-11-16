@@ -465,6 +465,11 @@ header {
     padding: 0 110px;
   }
 
+  .popup-wrapper .portfolio-snapshot h1 {
+    width: 80%;
+    order: 0;
+  }
+
   #headline h1 {
     font-size: 48px;
   }
@@ -484,6 +489,7 @@ header {
     width: 50%;
     order: 0;
   }
+
   #work {
     padding: 142px;
     margin: 0;
@@ -606,7 +612,10 @@ header {
   backdrop-filter: blur(10px);
   padding: 60px 17px 50px 17px;
 }
+
 .popup-wrapper .portfolio-snapshot {
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 0;
 }
 
@@ -616,18 +625,38 @@ header {
 }
 
 .popup-wrapper .portfolio-snapshot .btn-wrapper {
-  display: none;
+  order: 0;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
 }
 
-.popup-wrapper .portfolio-snapshot .img-wrapper img{
+.popup-wrapper .portfolio-snapshot .img-wrapper {
   width: 100%;
+}
+
+.popup-wrapper .portfolio-snapshot .img-wrapper img {
+  width: 100%;
+}
+
+.popup-wrapper .portfolio-snapshot .description {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.popup-wrapper .portfolio-snapshot .detail-footer {
+  width: 100%;
+  padding: 20px 0 20px 0;
 }
 
 .popup-wrapper .portfolio-snapshot .detail-footer .btn {
   margin-top: 20px;
-  width: 48%;
+  width: 45%;
   height: 48px;
   display: inline-flex;
+  margin-right: 15px;
 }
 
 .popup-wrapper .portfolio-snapshot .detail-footer .btn img {
@@ -638,89 +667,73 @@ header {
 }
 
 @media all and (min-width: 768px) {
-/* ===============================*\
+  /* ===============================*\
           Desktop Popup Details
 *\=============================== */
 
-.popup-wrapper {
-  height: 100vh;
-  overflow-y: scroll;
-}
+  .popup-wrapper {
+    height: 100vh;
+    overflow-y: scroll;
+  }
 
-.popup-wrapper .portfolio-snapshot {
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1156px;
-  top: 20px;
-  position: absolute;
-  display: flex;
-  gap: 0;
-  padding: 24px;
-}
+  .popup-wrapper .portfolio-snapshot {
+    width: 100%;
+    max-width: 1156px;
+    top: 20px;
+    position: absolute;
+    display: flex;
+    padding: 24px;
+  }
 
-.popup-wrapper .portfolio-snapshot h1 {
-  width: 80%;
-  order: 0;
-}
+  .popup-wrapper .portfolio-snapshot .btn-wrapper img {
+    height: 24px;
+    width: 24px;
+  }
 
-.popup-wrapper .portfolio-snapshot .btn-wrapper {
-  order: 0;
-  width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
+  .popup-wrapper .portfolio-snapshot .project-name {
+    width: 100%;
+    order: 1;
+  }
 
-.popup-wrapper .portfolio-snapshot .btn-wrapper img {
-  height: 24px;
-  width: 24px;
-}
+  .popup-wrapper .portfolio-snapshot .img-wrapper {
+    width: 100%;
+    height: 586px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    order: 2;
+    padding-top: 30px;
+  }
 
-.popup-wrapper .portfolio-snapshot .project-name {
-  width: 100%;
-  order: 1;
-}
+  .popup-wrapper .portfolio-snapshot .btn-wrapper {
+    width: 20%;
+  }
 
-.popup-wrapper .portfolio-snapshot .img-wrapper {
-  width: 100%;
-  height: 586px;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  order: 2;
-  padding-top: 30px;
-}
+  .popup-wrapper .portfolio-snapshot .description {
+    order: 3;
+    width: 70%;
+    padding: 60px 30px 80px 0;
+  }
 
-.popup-wrapper .portfolio-snapshot .description {
-  order: 3;
-  width: 70%;
-  padding: 60px 30px 80px 0;
-}
+  .popup-wrapper .portfolio-snapshot .detail-footer {
+    order: 3;
+    width: 30%;
+    padding: 60px 8px 80px 8px;
+  }
 
-.popup-wrapper .portfolio-snapshot .detail-footer {
-  order: 3;
-  width: 30%;
-  padding: 60px 8px 80px 8px; 
-}
+  .popup-wrapper .portfolio-snapshot .detail-footer .classification {
+    width: 100%;
+    height: 50px;
+  }
 
-.popup-wrapper .portfolio-snapshot .detail-footer .classification {
-  width: 100%;
-  height: 50px;
-}
+  .popup-wrapper .portfolio-snapshot .detail-footer .btn p {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+  }
 
-.popup-wrapper .portfolio-snapshot .detail-footer .btn p {
-  padding: 0;
-  margin: 0;
-  width: 80%;
-}
-
-.popup-wrapper .portfolio-snapshot .detail-footer .btn img {
-  margin-left: 0;
-}
-
-.popup-wrapper .portfolio-snapshot img {
-  width: 100%;
-}
+  .popup-wrapper .portfolio-snapshot .detail-footer .btn img {
+    margin-left: 0;
+  }
 }
