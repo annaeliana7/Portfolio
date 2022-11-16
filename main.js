@@ -22,3 +22,5 @@ window.onload = function () {
     $('#cross-button').click();
   });
 };
+
+// details popup
