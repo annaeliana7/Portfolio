@@ -17,6 +17,8 @@ Clone this repository by using the command line :
 ### Deployment
 ## Authors
 
+
+Anna Petras
 - GitHub: [@annaeliana](https://github.com/annaeliana7)
 
 ## Live Demo
