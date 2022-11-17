@@ -300,3 +300,8 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+window.addEventListener("beforeunload", () => {
+  var savedData = {name: form.name.value, email: form.email.value, message: form.message.value}
+  window.localStorage.setItem("formData", JSON.stringify(savedData))
+})
