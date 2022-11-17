@@ -311,5 +311,4 @@ window.addEventListener("load", () => {
   form.name.value = savedData.name
   form.email.value = savedData.email
   form.message.value = savedData.message
-  console.log(savedData)
 })
