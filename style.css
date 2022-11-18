@@ -149,6 +149,12 @@ header {
   text-decoration: none;
 }
 
+.intro-portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .classification {
   display: flex;
   gap: 10px;
@@ -276,7 +282,9 @@ header {
   order: 1;
 }
 
-/* --About section-- */
+/* ===============================*\
+           About section
+*\=============================== */
 
 #about-section {
   background-color: #fff;
@@ -444,12 +452,55 @@ header {
     padding: 0;
   }
 
+  .social-links a:hover {
+    filter: invert(37%) sepia(78%) saturate(1008%) hue-rotate(210deg) brightness(102%) contrast(103%);
+  }
+
   header .navbar .menu-desktop a {
     font-size: 15px;
     line-height: 20px;
     font-style: normal;
     font-weight: 500;
     color: #344563;
+  }
+
+  .classification-2 li {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 122px;
+    height: 120px;
+  }
+
+  .classification-2 {
+    flex-direction: row;
+  }
+
+  header .navbar .menu-desktop li {
+    position: relative;
+    transition: all 1s;
+  }
+
+  header .navbar .menu-desktop li:hover {
+    transform: scale(1.25);
+    transition: all 1s;
+  }
+
+  header .navbar .menu-desktop li::after {
+    content: '';
+    width: 100%;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: all 2s ease-out;
+    background-color: #6070ff;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  header .navbar .menu-desktop li:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
   }
 
   header .navbar .menu-desktop a:hover {
@@ -476,13 +527,6 @@ header {
     100% {
       transform: translateX(0);
     }
-  }
-
-  header .navbar h2:hover {
-    border: 1px solid rgba(157, 241, 208, 0.5);
-    background-color: rgba(157, 241, 208, 0.5);
-    padding: 17px;
-    border-radius: 5px;
   }
 
   /* ===============================*\
@@ -560,17 +604,6 @@ header {
     width: 60%;
   }
 
-  .classification-2 {
-    flex-direction: row;
-  }
-
-  .classification-2 li {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 122px;
-    height: 120px;
-  }
-
   /* ===============================*\
            Contact me
 *\=============================== */
@@ -599,7 +632,6 @@ header {
   background-color: rgba(96, 112, 255, 0.8);
   backdrop-filter: blur(10px);
   display: none;
-  transition: 0.5s;
 }
 
 .mobile-menu.display {
@@ -768,7 +800,9 @@ header {
   }
 }
 
-/* Contact Validation */
+/* ===============================*\
+          Contact Validation
+*\=============================== */
 
 .error {
   font-weight: bold;
