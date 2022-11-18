@@ -290,6 +290,7 @@ listProject.forEach((project) => {
 const form = document.getElementById('form');
 const error = document.getElementById('error');
 form.addEventListener('submit', (event) => {
+  event.preventDefault();
   const { email } = form.elements;
   if (email.validity.typeMismatch
     || email.value.toLowerCase() !== email.value
