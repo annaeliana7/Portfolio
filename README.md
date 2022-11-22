@@ -2,7 +2,7 @@
 # Portfolio Project
 > This project is a profile to showcase different projects for a software engineer
 ## Built With
-- HTML and CSS
+- HTML, CSS and JavaScript
 
 ## Getting Started
 
