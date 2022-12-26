@@ -150,6 +150,10 @@ This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<br>
+
+<!-- Author's message -->
+
 <div align="center">
     <img src="kefi-Unearthed-5.png" alt="logo" width="250"  height="auto" />
     <h3><b>Anna Petras for KING YESHUA - Kefi Unearthed</b></h3>
